@@ -186,7 +186,7 @@ Caste, religion, community do not matter to me—we are all humans at the end of
               <h2 className="text-lg font-semibold text-gray-700 border-l-4 border-green-400 pl-3 mb-3">
                 Photo Gallery
               </h2>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {data.gallery.map((src, i) => (
                   <div
                     key={i}
