@@ -32,6 +32,12 @@ export default function MarriageBiodata() {
     phone: "+91 7401518903",
     email: "duraielango11@gmail.com",
     address: "Chennai, Tamil Nadu",
+
+    // 🔮 New astrology fields
+    zodiac: "Scorpio (Vrischika) ♏",
+    star: "Vishakam",
+    lagna: "Kadakam (Cancer) ♋",
+
     about: `Hi, I am Durai, 29, an IT guy who somehow makes technology look cool. I lost my parents early, but that only made me stronger, closer to my sister, and more focused on living life fully. I balance responsibilities with fun—whether it is exploring food spots, bingeing anime, gaming, or just laughing at life’s little dramas.
 
 Lifestyle: No smoking, no drinking—my only addictions are learning new things and discovering new places. I love being around people, sharing stories, and turning even boring moments into entertainment.
@@ -47,15 +53,23 @@ Caste, religion, community do not matter to me—we are all humans at the end of
     <div className="min-h-screen bg-gradient-to-b from-orange-50 via-yellow-50 to-white p-8 flex items-center justify-center">
       <div className="relative max-w-5xl w-full bg-white rounded-3xl shadow-2xl overflow-hidden z-10">
         <div className="md:flex">
-          {/* Left column: photo + gallery */}
+          {/* Left column */}
           <div className="md:w-1/3 bg-gradient-to-b from-orange-100 via-orange-50 to-white p-8 flex flex-col items-center">
-            <div className="w-44 h-44 rounded-full border-6 border-white shadow-lg overflow-hidden">
-              <img src={data.photo} alt="Profile" className="w-full h-full object-cover" />
+            {/* Profile photo */}
+            <div className="w-44 h-44 rounded-full border-4 border-orange-400 shadow-lg overflow-hidden">
+              <img
+                src={data.photo}
+                alt="Profile"
+                className="w-full h-full object-cover"
+              />
             </div>
 
-            <h1 className="mt-4 text-2xl font-extrabold text-gray-800">{data.name}</h1>
+            <h1 className="mt-4 text-2xl font-extrabold text-gray-800 text-center">
+              {data.name}
+            </h1>
             <p className="text-sm text-orange-600">(Confidential & Genuine)</p>
 
+            {/* Quick stats */}
             <div className="mt-5 w-full grid grid-cols-2 gap-2 text-sm text-gray-700">
               <div className="bg-white/60 rounded-lg p-2 text-center">
                 <div className="text-xs text-gray-500">Age</div>
@@ -75,25 +89,20 @@ Caste, religion, community do not matter to me—we are all humans at the end of
               </div>
             </div>
 
-            <div className="mt-6 w-full">
-              <h3 className="text-sm text-gray-600 mb-2 font-medium">Photo Gallery</h3>
-              <div className="grid grid-cols-2 gap-2">
-                {data.gallery.map((src, i) => (
-                  <img key={i} src={src} alt={`gallery-${i}`} className="w-full h-28 object-cover rounded-lg border-2 border-white shadow-sm" />
-                ))}
-              </div>
+            {/* About Me moved here */}
+            <div className="mt-6 w-full p-4 bg-amber-50 rounded text-sm text-gray-700">
+              <div className="font-medium text-gray-800 mb-1">About Me</div>
+              <div className="whitespace-pre-line">{data.about}</div>
             </div>
           </div>
 
-          {/* Right column: details */}
+          {/* Right column */}
           <div className="md:w-2/3 p-8">
-            <h2 className="text-2xl font-semibold text-gray-700 mb-4">Marriage Biodata</h2>
+            <h2 className="text-2xl font-semibold text-gray-700 mb-4">
+              Marriage Biodata
+            </h2>
 
-            <div className="mb-4 p-4 bg-amber-50 rounded">
-              <div className="font-medium">About Me</div>
-              <div className="mt-2 whitespace-pre-line text-gray-700 text-sm">{data.about}</div>
-            </div>
-
+            {/* Details grid */}
             <div className="grid grid-cols-2 gap-x-6 gap-y-3 text-sm text-gray-700">
               <div>
                 <div className="text-xs text-gray-500">Date of Birth</div>
@@ -103,7 +112,6 @@ Caste, religion, community do not matter to me—we are all humans at the end of
                 <div className="text-xs text-gray-500">Religion / Caste</div>
                 <div className="font-medium">{data.religionCaste}</div>
               </div>
-
               <div>
                 <div className="text-xs text-gray-500">Birth Place</div>
                 <div className="font-medium">{data.birthPlace}</div>
@@ -113,15 +121,30 @@ Caste, religion, community do not matter to me—we are all humans at the end of
                 <div className="font-medium">{data.residence}</div>
               </div>
 
+              {/* 🔮 Astrology details */}
+              <div>
+                <div className="text-xs text-gray-500">Zodiac (Rasi)</div>
+                <div className="font-medium">{data.zodiac}</div>
+              </div>
+              <div>
+                <div className="text-xs text-gray-500">Star (Nakshatra)</div>
+                <div className="font-medium">{data.star}</div>
+              </div>
+              <div>
+                <div className="text-xs text-gray-500">Lagna</div>
+                <div className="font-medium">{data.lagna}</div>
+              </div>
+
               <div>
                 <div className="text-xs text-gray-500">Qualification</div>
                 <div className="font-medium">{data.qualification}</div>
               </div>
               <div>
                 <div className="text-xs text-gray-500">Occupation</div>
-                <div className="font-medium">{data.occupation} — {data.company}</div>
+                <div className="font-medium">
+                  {data.occupation} — {data.company}
+                </div>
               </div>
-
               <div>
                 <div className="text-xs text-gray-500">Annual Income</div>
                 <div className="font-medium">{data.income}</div>
@@ -130,7 +153,6 @@ Caste, religion, community do not matter to me—we are all humans at the end of
                 <div className="text-xs text-gray-500">Location</div>
                 <div className="font-medium">{data.location}</div>
               </div>
-
               <div>
                 <div className="text-xs text-gray-500">Father</div>
                 <div className="font-medium">{data.father}</div>
@@ -139,12 +161,10 @@ Caste, religion, community do not matter to me—we are all humans at the end of
                 <div className="text-xs text-gray-500">Mother</div>
                 <div className="font-medium">{data.mother}</div>
               </div>
-
               <div className="col-span-2">
                 <div className="text-xs text-gray-500">Siblings</div>
                 <div className="font-medium">{data.siblings}</div>
               </div>
-
               <div>
                 <div className="text-xs text-gray-500">Phone</div>
                 <div className="font-medium">{data.phone}</div>
@@ -153,18 +173,32 @@ Caste, religion, community do not matter to me—we are all humans at the end of
                 <div className="text-xs text-gray-500">Email</div>
                 <div className="font-medium">{data.email}</div>
               </div>
-
               <div className="col-span-2">
                 <div className="text-xs text-gray-500">Address</div>
                 <div className="font-medium">{data.address}</div>
               </div>
             </div>
 
-            <div className="mt-6 flex gap-3">
-              <button className="px-4 py-2 rounded-lg bg-amber-500 text-white text-sm">Download PDF</button>
-              <button className="px-4 py-2 rounded-lg border border-gray-300 text-sm">Print</button>
-              <button className="px-4 py-2 rounded-lg border border-gray-300 text-sm">Edit</button>
-            </div>
+            {/* Photo Gallery */}
+            <section className="mt-6">
+              <h2 className="text-lg font-semibold text-gray-700 border-l-4 border-green-400 pl-3">
+                Photo Gallery
+              </h2>
+              <div className="mt-3 grid grid-cols-2 sm:grid-cols-4 gap-3">
+                {data.gallery.map((src, i) => (
+                  <div
+                    key={i}
+                    className="w-full aspect-square overflow-hidden rounded-lg border-2 border-orange-300 shadow-sm"
+                  >
+                    <img
+                      src={src}
+                      alt={`gallery-${i}`}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
+            </section>
           </div>
         </div>
       </div>
