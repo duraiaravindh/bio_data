@@ -29,10 +29,10 @@ export default function MarriageBiodata() {
     father: "Elangovan Durairaj (passed away)",
     mother: "Saratha Elangovan (passed away)",
     siblings: "Raveena Elangovan — Visual Merchandiser",
-    phone: "+91 740151903",
+    phone: "+91 7401518903",
     email: "duraielango11@gmail.com",
     address: "Chennai, Tamil Nadu",
-    about: `Hi, I am Durai, 27, an IT guy who somehow makes technology look cool. I lost my parents early, but that only made me stronger, closer to my sister, and more focused on living life fully. I balance responsibilities with fun—whether it is exploring food spots, bingeing anime, gaming, or just laughing at life’s little dramas.
+    about: `Hi, I am Durai, 29, an IT guy who somehow makes technology look cool. I lost my parents early, but that only made me stronger, closer to my sister, and more focused on living life fully. I balance responsibilities with fun—whether it is exploring food spots, bingeing anime, gaming, or just laughing at life’s little dramas.
 
 Lifestyle: No smoking, no drinking—my only addictions are learning new things and discovering new places. I love being around people, sharing stories, and turning even boring moments into entertainment.
 
