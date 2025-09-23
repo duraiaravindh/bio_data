@@ -21,7 +21,6 @@ export default function MarriageBiodata() {
     motherTongue: "Tamil",
     nationality: "Indian",
     qualification: "BE Civil",
-    skills: "GIS, Web Development",
     occupation: "Senior GIS Engineer",
     company: "Austin NNN",
     income: "₹48,000 - ₹55,000",
@@ -32,22 +31,21 @@ export default function MarriageBiodata() {
     phone: "+91 7401518903",
     email: "duraielango11@gmail.com",
     address: "Chennai, Tamil Nadu",
-
-    // 🔮 Astrology
     zodiac: "Scorpio (Vrischika) ♏",
     star: "Vishakam",
     lagna: "Kadakam (Cancer) ♋",
 
-    about: `Hi, I am Durai, 29, an IT guy who somehow makes technology look cool. I lost my parents early, but that only made me stronger, closer to my sister, and more focused on living life fully. I balance responsibilities with fun—whether it is exploring food spots, bingeing anime, gaming, or just laughing at life’s little dramas.
+    about: `**Hi, I am Durai, 29** – an IT guy who somehow makes technology look cool. I lost my parents early, but that only made me stronger, closer to my sister, and more focused on living life fully. I balance responsibilities with fun—whether it is exploring food spots, bingeing anime, gaming, or just laughing at life’s little dramas.
 
-Lifestyle: No smoking, no drinking—my only addictions are learning new things and discovering new places. I love being around people, sharing stories, and turning even boring moments into entertainment.
+**Lifestyle** – No smoking, no drinking—my only addictions are learning new things and discovering new places. I love being around people, sharing stories, and turning even boring moments into entertainment.
 
-Career: I work in IT, always upgrading my skills and chasing growth. For me, stability does not mean settling down, it means learning more, earning more, and staying curious forever.
+**Career** – I work in IT, always upgrading my skills and chasing growth. For me, stability does not mean settling down, it means learning more, earning more, and staying curious forever.
 
-What I am Looking For: I am searching for a partner who is independent, cheerful, and ready to live life as a team. I do not expect her to earn for me, but I would love her to grow in her own career and dreams. Her family will be mine too—I would stand by them just like I would stand by her.
+**What I am Looking For** – I am searching for a partner who is independent, cheerful, and ready to live life as a team. I do not expect her to earn for me, but I would love her to grow in her own career and dreams. Her family will be mine too—I would stand by them just like I would stand by her.
 
-Caste, religion, community do not matter to me—we are all humans at the end of the day. What matters is laughter, loyalty, trust, and building a life together with patience and positivity.`,
+**Values** – Caste, religion, community do not matter to me—we are all humans at the end of the day. What matters is laughter, loyalty, trust, and building a life together with patience and positivity.`
   };
+
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-50 via-yellow-50 to-white p-8 flex items-center justify-center">
