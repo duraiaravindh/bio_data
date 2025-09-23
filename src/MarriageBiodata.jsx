@@ -88,7 +88,10 @@ export default function MarriageBiodata() {
             {/* About Me */}
             <div className="mt-6 w-full p-4 bg-amber-50 rounded text-sm text-gray-700">
               <div className="font-medium text-gray-800 mb-1">About Me</div>
-              <div className="whitespace-pre-line">{data.about}</div>
+              <div
+                className="whitespace-pre-line"
+                dangerouslySetInnerHTML={{ __html: data.about }}
+              />
             </div>
           </div>
 
