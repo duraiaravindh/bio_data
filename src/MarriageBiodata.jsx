@@ -146,7 +146,7 @@ export default function MarriageBiodata() {
                   </div>
                 </div>
                 <div>
-                  <div className="text-xs text-gray-500">Annual Income</div>
+                  <div className="text-xs text-gray-500">Monthly Income</div>
                   <div className="font-medium">{data.income}</div>
                 </div>
                 <div>
