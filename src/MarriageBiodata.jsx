@@ -60,7 +60,6 @@ export default function MarriageBiodata() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div dangerouslySetInnerHTML={{ __html: data.about }} />
             <h1 className="mt-4 text-2xl font-extrabold text-gray-800 text-center">
               {data.name}
             </h1>
